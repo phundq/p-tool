@@ -1,0 +1,357 @@
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --black: #222329;
+  --success: #1cc26e;
+  --danger: #f3400a;
+  --info: #39b8b3;
+  --primary: #0090a8;
+  --warning: #e9c550a6;
+  --default: #585960;
+  --white: #f7f7f7;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(249, 249, 252);
+  color: var(--black);
+}
+
+textarea {
+  /* resize: none; */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  width: 200px;
+  font: 400 13px Arial;
+}
+
+textarea:focus {
+  outline: 0;
+  border: 1px solid rgb(128, 169, 175);
+  border-radius: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(201, 201, 201, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
+
+/* APP STYLE */
+
+.container {
+  width: 100%;
+  padding: 8px;
+}
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.fd-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-warn {
+  background-color: var(--warning);
+}
+
+.bg-info {
+  background-color: var(--info);
+}
+
+.bg-danger {
+  background-color: var(--danger);
+}
+
+.bg-success {
+  background-color: var(--success);
+}
+
+.bg-default {
+  background-color: var(--default);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-warn {
+  color: var(--warning);
+}
+
+.text-info {
+  color: var(--info);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-default {
+  color: var(--default);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.no-select {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.tab-header-group {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--info);
+  align-items: flex-end;
+}
+
+.tab-header {
+  /* border-bottom: 1px solid var(--info); */
+  background-color: #0000006b;
+  color: rgb(159 159 159);
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 1px;
+  font-size: 10px;
+  transform: all 1s !important;
+}
+
+.tab-header.active {
+  border-bottom: 2px solid var(--info);
+  height: 26px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #0000009c;
+  color: #ffffff;
+}
+
+.tab-header-group:last-child {
+  margin-right: 0px !important;
+}
+
+.tab-group {
+  display: flex;
+  width: 100%;
+  position: relative;
+  transition: all 1s !important;
+}
+
+.tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+}

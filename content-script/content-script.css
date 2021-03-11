@@ -1,0 +1,16 @@
+.p-btn {
+  padding: 6px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.9s;
+  z-index: 1000;
+  width: 32px;
+  height: 32px;
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}

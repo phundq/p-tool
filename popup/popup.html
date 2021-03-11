@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div id="container" class="container">
+    <div class="no-select tab-header-group">
+      <div id="tab-stack" class="tab-header cursor-pointer">stackoverflow</div>
+      <div id="tab-param" class="tab-header cursor-pointer">SQL Param</div>
+      <div id="tab-append" class="tab-header cursor-pointer" style="margin-right: 0px;">SQL Append</div>
+    </div>
+    <div class="tab-group">
+
+      <div class="tab row " id="tab-stack-area">
+        <div class="row fd-column" style="justify-content: center;">
+          <div class="p-title">Search with stackoverflow.com</div>
+          <input type="text" id="searchText" class="p-input" autofocus>
+          <div class="p-btn-group">
+            <button id="clearBtn" class="p-btn bg-warn">Clear</button>
+            <button id="searchBtn" class="p-btn bg-primary text-white">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab row" id="tab-param-area">
+        <div class="row fd-column" style="justify-content: center;">
+          <div class="p-title"> Sql Param</div>
+          <div class="row">
+            <div style="width: calc(50% - 4px); margin-right: 4px;">
+              <textarea name="" id="sqlString" style="width: 100%;" rows="16"></textarea>
+            </div>
+            <div style="width: calc(50% - 4px); margin-left: 4px;">
+              <textarea name="" id="sqlResult" style="width: 100%;" rows="16"></textarea>
+            </div>
+          </div>
+          <div class="p-btn-group">
+            <button id="clearSqlParamBtn" class="p-btn bg-warn">Clear</button>
+            <button  class="p-btn bg-primary text-white">Copy Result</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab row" id="tab-append-area">
+        <div class="p-title"> Sql Append</div>
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+  <script type = "text/javascript" src="popup.js"></script>
+</body>
+
+</html>
